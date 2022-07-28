@@ -1,0 +1,35 @@
+-----------------1. XMLHttpRequest ------------
+//xhr =  xml http request
+//event :  onload(), onerror()
+//property: response,responseText,responseType, responseURL, status, statusText
+// function: open(), send(), setRequestHeader()
+
+
+
+-----------------2. fetch() ------------
+//4 ways to call api - XMLHttpRequest, fetch, axios, jquery
+//fetch() has replaced XMLHttprequest 
+// fetch() -> global method for making HTTP Request
+// 2 ways to call - then, await for fetch()
+ //positive --> easy to use compare to XMLHttpRequest,  fetch() returns promise
+ //Negative   --> returned promise can only handle network error, does not support older version
+
+
+
+
+ -------------------3.Axios api----------------
+ // axios is a js libary
+// it helps to make request from browser(plain js/vue/React/Angular), node.js
+//positive: very easy to use , supports all modern browser including IE
+            //returns promise, throws error brilliantly
+            //No need to set header cause axios is inteeligent
+//Methods:  
+            //axios(config)
+            //axios(url[,config])
+            //axios(url.get [,config])          
+            //axios(url.post [,config])          
+            //axios(url.put [,config])          
+            //axios(url.patch [,config])          
+            //axios(url.delete [,config]) 
+            
+            //axios returns response object ---> data, status, statusText, headers,config
